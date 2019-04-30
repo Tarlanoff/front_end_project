@@ -1,82 +1,102 @@
-#main-slide{
-    width: 100%;
-    padding: 0;
-    margin: 0;
+#main-slide {
+  .items {
+    position: relative;
+    .item {
+      text-align: center;
 
-
-    .carousel{
-
-   
-    .carousel-item {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
         width: 100%;
-        position: relative;
-
-        img {
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      img {
+        height: 800px;
+      }
+      h1 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 30%;
+        left: 0;
+        z-index: 2;
+        color: $helper-color;
+        font-size: 50px;
+        font-family: $title-font;
+        font-weight: 700;
+        opacity: 0;
+      }
+      h4 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 60%;
+        left: 0;
+        z-index: 2;
+        color: $helper-color;
+        font-size: 20px;
+        opacity: 0;
+      }
+      ul {
+        position: absolute;
+        width: 100%;
+        top: 70%;
+        left: 0;
+        z-index: 2;
+        opacity: 0;
+        li {
+          margin: 0px 10px;
+          a {
+            padding: 12px 30px;
+          }
         }
-
-        //overlay
-        &:before {
-            content:'';
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.349);
-        }
-        //overlay end
-
-        .carousel-caption {
-            top: 35%;
-            color: $helper-color;
-
-            h1 {
-                font-weight: bold;
-                font-size: 55px;
-                margin-bottom: 18px;
-            }
-
-            p{
-                font-size: 17px;
-            }
-
-            button {
-                height: 50px;
-                width: 150px;
-                margin: 20px 5px 0;
-                font-size: 18px;
-            }
-
-            .fadeIndown{
-                animation-delay: 4s;
-                animation-duration: 4s;
-            }
-
-            .fadeInUp{
-                animation-delay: 1s;
-                animation-duration: 3s;
-            }
-        }
+      }
     }
 
-    a[class^=carousel-control] {
-
-        i{
-            height: 60px;
-            width: 60px;
-            line-height: 60px;
-            font-size: 30px;
-            border-radius: 100%;
-            z-index: 2;
-            background-color: rgba(0, 0, 0, 0.26);
-            
-        }
-     
+    // buttons customization
+    .owl-prev {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      opacity: 0;
+      top: 60%;
+      left: 20px;
+      z-index: 2;
     }
-
-}
-
+    .owl-next {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      opacity: 0;
+      top: 60%;
+      right: 20px;
+      z-index: 2;
+    }
+    .owl-prev i,
+    .owl-next i {
+      font-size: 40px;
+      color: #ccc;
+    }
+    &:hover {
+      .owl-prev {
+        opacity: 1;
+      }
+      .owl-next {
+        opacity: 1;
+      }
+      .owl-prev i,
+      .owl-next i {
+        font-size: 40px;
+        color: #ccc;
+      }
+    }
+  }
 }
