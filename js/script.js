@@ -60,51 +60,11 @@ $(document).ready(function () {
         $("#main-menu .search").toggleClass("active")
         $("#main-menu .search input").val('')
     })
-    // Menu bar search button toggle end //
+    // event end //
 
 
 
-    //Pop Categories carousel start
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: true,
-        dots: false,
-        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 5
-            }
-        }
 
-    })
-
-
-    //carousel nav button animation show/hide start
-    $(".owl-stage-outer").mouseenter(function () {
-        $(".owl-prev").stop();
-        $(".owl-next").stop();
-        $(".owl-prev").animate({ left: '7px' }).css("display", "block")
-        $(".owl-next").animate({ right: '7px' }).css("display", "block")
-    });
-
-    $(".owl-stage-outer").mouseleave(function () {
-        $(".owl-prev").stop();
-        $(".owl-next").stop();
-        $(".owl-prev").animate({ left: '-37px' }).css("display", "none")
-        $(".owl-next").animate({ right: '-37px' }).css("display", "none")
-    })
-    //carousel nav button animation show/hide end
-
-
-
-    //Pop Categories section carousel js end
 
 
 
