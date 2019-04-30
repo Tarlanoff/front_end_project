@@ -1,0 +1,73 @@
+#popular {
+    padding: 100px 0px;
+
+    .owl-carousel {
+        
+        a{
+
+                text-decoration: none;
+                color: $helper-color;
+            
+            .item {
+                text-align: center;
+                height: 120px;
+                padding: 25px 20px;
+                margin: 0 7px;
+                border-radius: 10px;
+                
+            
+                i {
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 16px;
+                }
+                
+
+                // slider item background colors start
+                &.business {
+                    background-color:#B3D369;
+                }
+                &.development {
+                    background-color: #fd7e14;
+                }
+                &.health{
+                    background-color: #00C3CB;
+                }
+                &.language {
+                    background-color: #f5576c;
+                }
+                &.academics {
+                    background-color: $yellow-color;
+                }
+                &.photography {
+                    background-color: #e83e8c;
+                }
+                // slider item background colors end
+    
+        }
+    }
+
+    .owl-prev,
+    .owl-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #292b2c;
+        background-color: $helper-color;
+        box-shadow: 0 0 5px rgba(128, 128, 128, 0.747);
+        width: 30px;
+        height: 30px;
+        display: none;
+        }
+
+.owl-prev {
+left: -26px;
+}
+
+.owl-next {
+right: -26px;
+}
+}
+}

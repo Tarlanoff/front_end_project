@@ -1,0 +1,91 @@
+#contact-info {
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    background-color:#343a40;
+    color: $helper-color;
+    display: flex;
+    line-height: 50px;
+
+
+    
+    .contact-details {
+
+        .item {
+            display: inline-block;
+            margin-right: 15px;
+
+            a {
+
+                i {
+                    margin-right: 3px;
+                }
+
+                &:hover {
+                    color: $yellow-color;
+                    cursor: pointer;
+                    transition: 0.4s;
+                }
+            }
+            
+        }
+        
+    }
+
+
+    
+    .social {
+
+        text-align: right;
+
+
+        &::after{
+            content:'';
+            position: absolute;
+            height: 28px;
+            top: 10px;
+            right: 0px;
+            border-right: 1px solid $helper-color;
+        }
+        ul{
+            padding: 0;
+            
+            
+            li{
+                display: inline-block;
+                margin-left: 17px;
+
+                &:hover {
+                    color: $yellow-color;
+                    transition: 0.4s;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+
+    
+    .login {
+        display: inline-block;
+        font-size: 14px;
+
+        p{
+            display: inline-block;
+            margin-bottom: 0;
+
+            &:hover {
+                color: $yellow-color;
+                cursor: pointer;
+                transition: 0.4s;
+            }
+        }
+
+
+
+        button {
+            margin-left: 10px;
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+#alert {
+    background-color: #f5576c;
+        height: 50px;
+        width: 100%;
+        display: block;
+
+    .alert-text {
+        color: $helper-color;
+        
+       
+
+        p {
+            font-weight: bold;
+            line-height: 50px;
+
+            a {
+                color: $helper-color;
+                text-decoration: underline;
+              
+                i{
+                    margin-left: 15px;
+                    font-size: 20px;
+                    line-height: 40px;
+                    color: rgba(255, 255, 255, 0.836);
+                    
+    
+                    &:hover {
+                        color: $helper-color;
+                        cursor: pointer;
+                    }
+                }
+            }   
+        }
+    }
+}

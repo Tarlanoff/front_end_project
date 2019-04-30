@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>Eduglobal - Education & Courses HTML Template</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="scss/animate.css-master/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="scss/style.css">
+
+
+</head>
+
+<body>
+
+    <!-- settings start -->
+    <section id="settings">
+        <div class="container-fluid">
+            <div class="cart"><i class="fas fa-shopping-cart"></i></div>
+            <div class="color-options"><i class="fas fa-cog"></i></div>
+        </div>
+    </section>
+    <!-- settings end -->
+
+    <!-- header start -->
+
+    <header>
+
+        <!--alert start-->
+        <section id="alert">
+            <div class="container">
+                <div class="row d-flex">
+                    <div class="col-lg-6 offset-lg-3">
+                        <div class="alert-text">
+                            <p>Unlimited online course & video tutorials downloads! <a href="#">Get 30% off<i
+                                        class="fas fa-times"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- alert end-->
+
+        <!-- contact info start -->
+        <section id="contact-info">
+            <div class="container">
+                <div class="row d-flex">
+                    <div class="col-lg-6">
+                        <div class="contact-details">
+                            <div class="item">
+                                <a><i class="fas fa-mobile-alt"></i> 123-456-7890</a>
+                            </div>
+                            <div class="item">
+                                <a><i class="far fa-envelope"></i> info@yourmail.com</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="social">
+                                    <ul>
+                                        <li><i class="fab fa-facebook-f"></i></li>
+                                        <li><i class="fab fa-twitter"></i></li>
+                                        <li><i class="fab fa-google-plus-g"></i></li>
+                                        <li><i class="fab fa-youtube"></i></li>
+                                        <li><i class="fab fa-instagram"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="login">
+                                    <p data-toggle="modal" data-target="#exampleModal">Login</p>
+                                    <button type="button" class="btn btn-main">Apply Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact info end -->
+
+        <!-- modal start-->
+        <section id="modal-registration">
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content show">
+                        <div class="row">
+
+                            <div class="col-lg-5">
+                                <div class="modal-img">
+                                    <img src="images/login_img.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-info">
+
+                                    <!--  -->
+                                    <ul class="nav nav-tabs">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#login" data-toggle="tab">Login</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#signup" data-toggle="tab">Sign Up</a>
+                                    </ul>
+                                    <!--  -->
+
+                                    <!-- login start -->
+                                    <div class="modal-body active" id="login">
+                                        <form>
+                                            <div class="form-group">
+                                                <label class="login-title" for="exampleInputEmail1">Login</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp" placeholder="Email" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                                    placeholder="Password" required>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1">Remember
+                                                    me</label>
+                                                <span><a href="#">Lost your password?</a></span>
+                                            </div>
+                                            <button type="submit" class="btn btn-main">Log In</button>
+                                        </form>
+
+                                    </div>
+                                    <!-- login end -->
+
+                                    <!-- signup start -->
+                                    <div class="modal-body" id="signup">
+                                        <form>
+                                            <div class="form-group">
+                                                <label class="login-title" for="exampleInputEmail1">Sign Up</label>
+                                                <input type="username" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp" placeholder="Username" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp" placeholder="Email" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                                    placeholder="Password" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                                    placeholder="Confirm password" required>
+                                            </div>
+                                            <button type="submit" class="btn btn-main">Sign Up</button>
+                                        </form>
+                                    </div>
+                                    <!-- signup end -->
+
+
+                                    <div class="footer-divider">
+                                        <span>OR</span>
+                                    </div>
+
+                                    <div class="modal-footer">
+
+                                        <button type="button" class="btn btn-fb"><i class="fab fa-facebook-f"></i>
+                                            Facebook</button>
+                                        <button type="button" class="btn btn-google"><i
+                                                class="fab fa-google-plus-g"></i>
+                                            Google</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- modal end -->
+
+        <!-- navbar start -->
+        <section id="main-menu">
+            <div class="container">
+                <div class="row d-flex">
+                    <div class="col-lg-12">
+                        <div class="menu">
+                            <nav class="navbar navbar-expand-lg navbar-light px-0 py-0">
+                                <div class="logo">
+                                    <img src="images/logo_dark.png" alt="">
+                                </div>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                HOME <i class="fas fa-angle-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#">Home Version 1</a>
+                                                <a class="dropdown-item" href="#">Home Version 2</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                PAGES <i class="fas fa-angle-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#">About Us</a>
+                                                <ul style="padding:0">
+                                                    <li class="nav-item dropdown" style="list-style:none; padding:0">
+                                                        <a class="dropdown-item" href="#" id="navbarDropdown"
+                                                            style="position:relative" role="button"
+                                                            data-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">Gallery <i class="fas fa-angle-right"
+                                                                style="margin-left:80px;"></i></a>
+                                                        <div class="dropdown-menu" id="second-dropdown">
+                                                            <a class="dropdown-item" href="#">Gallery 3 Column Grid</a>
+                                                            <a class="dropdown-item" href="#">Gallery 3 Column Grid</a>
+                                                            <a class="dropdown-item" href="#">Gallery 3 Column
+                                                                Masonry</a>
+                                                            <a class="dropdown-item" href="#">Gallery 3 Column
+                                                                Masonry</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+
+                                                <a class="dropdown-item" href="#">Faq</a>
+                                                <a class="dropdown-item" href="#">404 Page</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                COURSE <i class="fas fa-angle-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#">Courses</a>
+                                                <a class="dropdown-item" href="#">Course Detail</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                EVENT <i class="fas fa-angle-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#">Event</a>
+                                                <a class="dropdown-item" href="#">Event Detail</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                TEACHER <i class="fas fa-angle-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#">Teacher</a>
+                                                <a class="dropdown-item" href="#">Teacher Detail</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                BLOG <i class="fas fa-angle-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#">Blog</a>
+                                                <a class="dropdown-item" href="#">Blog Detail</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">CONTACT <span
+                                                    class="sr-only">(current)</span></a>
+                                        </li>
+
+                                    </ul>
+                                    <a class="search-link" href="#search-input">
+                                        <i class="fas fa-search"></i>
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                    <div class="search">
+                                        <form class="form-inline" id="search-input">
+                                            <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                                aria-label="Search">
+                                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i
+                                                    class="fas fa-search"></i></button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </nav>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- navbar end -->
+
+
+    </header>
+
+    <!-- header end -->
+
+
+    <!-- main start -->
+
+    <main>
+
+        <!--main slide start -->
+        <div id="main-slide">
+            <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/carousel/banner1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="animated fadeInDown">WELCOME TO EDUGLOBAL</h1>
+                            <p class="animated fadeInUp">Lorem is simply text of the printing and typesetting industry.
+                            </p>
+                            <button type="button" class="btn btn-main animated fadeInUp">Get Started</button>
+                            <button type="button" class="btn btn-outline-white animated fadeInUp">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carousel/banner2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="animated fadeInDown">LEARN ONLINE COURSES</h1>
+                            <p class="animated fadeInUp">Contrary to popular belief, Lorem Ipsum is not simply random
+                            </p>
+                            <button type="button" class="btn btn-main animated fadeInUp">Get Started</button>
+                            <button type="button" class="btn btn-outline-white animated fadeInUp">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carousel/banner3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="animated fadeInDown">EDUCTION FROM A NEW ANGLE</h1>
+                            <p class="animated fadeInUp">Contrary to popular belief, Lorem Ipsum is not simply random
+                            </p>
+                            <button type="button" class="btn btn-main animated fadeInUp">Get Started</button>
+                            <button type="button" class="btn btn-outline-white animated fadeInUp">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <i class="fas fa-angle-left"></i>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <i class="fas fa-angle-right"></i>
+
+                </a>
+            </div>
+        </div>
+        <!-- main slide end -->
+
+
+        <!-- why choose eduglobal start -->
+        <section id="choose-eduglobal">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="page-title">
+                            <h2>Why Choose Eduglobal</h2>
+                            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                anything embarrassing hidden in the middle of text</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <div class="photo">
+                                <img src="images/icons/book.png" alt="">
+                            </div>
+                            <h5>Books & Library</h5>
+                            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there
+                                isn't anything embarrassing hidden in the middle of text</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <div class="photo">
+                                <img src="images/icons/globe.png" alt="">
+                            </div>
+                            <h5>Learn Courses Online</h5>
+                            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there
+                                isn't anything embarrassing hidden in the middle of text</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="item">
+                            <div class="photo">
+                                <img src="images/icons//instructors.png" alt="">
+                            </div>
+                            <h5>Expert Instructors</h5>
+                            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there
+                                isn't anything embarrassing hidden in the middle of text</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- why choose eduglobal end -->
+
+
+        <!-- popular categories start -->
+        <section id="popular">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="page-title">
+                            <h2>Most Popular Categories</h2>
+                            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                anything embarrassing hidden in the middle of text</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="owl-carousel owl-theme">
+                            <a href="#">
+                                <div class="item business">
+                                    <i class="fa fa-chart-line"></i>
+                                    <p>Business</p>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="item academics">
+                                    <i class="fas fa-book"></i>
+                                    <p>Academics</p>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="item photography" id="photography">
+                                    <i class="fa fa-camera"></i>
+                                    <p>Photography</p>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="item health" id="health">
+                                    <i class="fa fa-heartbeat"></i>
+                                    <p>Health Fitness</p>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="item language">
+                                    <i class="fas fa-globe"></i>
+                                    <p>Language</p>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="item development">
+                                    <i class="fas fa-code"></i>
+                                    <p>Development</p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- popular categories end -->
+
+        <!-- about us start -->
+        <section id="about">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 px-0 mx-0">
+                        <div class="content">
+                            <h2>About Us</h2>
+                            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                anything embarrassing hidden in the middle of text.All the Lorem Ipsum generators on the
+                                Internet tend to repeat predefined chunks as necessary</p>
+
+                            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                anything embarrassing hidden in the middle of text.</p>
+
+                            <ul>
+                                <li>
+                                    <h1>260</h1>
+                                    <p>Free Courses</p>
+                                </li>
+                                <li>
+                                    <h1>152</h1>
+                                    <p>Paid Courses</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 px-0 mx-0">
+                        <div class="video-img">
+                            <img src="images/about/about_img.jpg" alt="">
+                        </div>
+                        <a data-fancybox href="https://www.youtube.com/embed/7e90gBu4pas"><i
+                                class="fas fa-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about us end -->
+
+
+        
+    </main>
+
+    <!-- main end -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
