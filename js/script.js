@@ -63,7 +63,6 @@ $(document).ready(function () {
     // event end //
 
 
-<<<<<<< HEAD
     // main slide carousel start
     $('#main-slide .items').owlCarousel({
         loop: true,
@@ -138,10 +137,8 @@ $(document).ready(function () {
     }
     // main slide carousel end
 
-=======
 
    
->>>>>>> ffe93e87717703d7911a47218d97b00f53510060
 
     // popular categories slide carousel start
     $("#popular .items").owlCarousel({
@@ -167,7 +164,4 @@ $(document).ready(function () {
     // popular categories slide carousel end
 });
 
-<<<<<<< HEAD
-=======
-});
->>>>>>> ffe93e87717703d7911a47218d97b00f53510060
+
