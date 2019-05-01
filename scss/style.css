@@ -1439,4 +1439,106 @@ h6 {
   border-top: 1px solid #ddd;
   padding-top: 15px;
 }
+
+#online-courses {
+  width: 100%;
+  height: 735px;
+  background-image: url("https://bestwebcreator.com/eduglobal/demo/assets/images/pattern_bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 100px;
+  margin-top: 100px;
+}
+
+#online-courses:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #07294D;
+  z-index: -2;
+}
+
+#online-courses .registration {
+  color: #fff;
+  border-radius: 10px;
+  width: 550px;
+  height: 550px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#online-courses .registration form {
+  margin: 15px 0;
+}
+
+#online-courses .registration form h1 {
+  font-size: 30px;
+}
+
+#online-courses .registration form h1 span {
+  color: #FFBC09;
+}
+
+#online-courses .registration form p {
+  margin: 20px 0;
+}
+
+#online-courses .registration form input {
+  background-color: transparent;
+  color: #fff;
+}
+
+#online-courses .registration form input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#online-courses .registration form input:-ms-input-placeholder {
+  color: #fff;
+}
+
+#online-courses .registration form input::-ms-input-placeholder {
+  color: #fff;
+}
+
+#online-courses .registration form input::placeholder {
+  color: #fff;
+}
+
+#online-courses .registration form select {
+  background-color: transparent;
+  color: #fff;
+}
+
+#online-courses .registration form textarea {
+  background-color: transparent;
+  width: 468px;
+  margin-left: 5px;
+  height: 150px;
+  color: #fff;
+}
+
+#online-courses .registration form textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#online-courses .registration form textarea:-ms-input-placeholder {
+  color: #fff;
+}
+
+#online-courses .registration form textarea::-ms-input-placeholder {
+  color: #fff;
+}
+
+#online-courses .registration form textarea::placeholder {
+  color: #fff;
+}
+
+#online-courses .registration form button {
+  padding: 10px 30px;
+}
 /*# sourceMappingURL=style.css.map */

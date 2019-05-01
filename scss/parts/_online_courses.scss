@@ -1,0 +1,77 @@
+#online-courses {
+
+    width: 100%;
+    height: 735px;
+    background-image: url("https://bestwebcreator.com/eduglobal/demo/assets/images/pattern_bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 100px;
+    margin-top: 100px;
+   
+
+    &:before {
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #07294D;
+        z-index: -2;
+    }
+
+    .registration {
+        color: $helper-color;
+        border-radius: 10px;
+        width: 550px;
+        height: 550px;
+        padding: 40px;
+        background-color: rgba(255,255,255,0.1);
+
+        form {
+            margin: 15px 0;
+        h1 {
+            font-size: 30px;
+           
+
+            span{
+                color: $yellow-color;
+            }
+        }
+
+        p {
+            margin: 20px 0;
+        }
+
+        input {
+            background-color: transparent;
+            color: $helper-color;
+
+            &::placeholder {
+                color: $helper-color;
+            }
+        }
+        select {
+            background-color: transparent;
+            color: $helper-color;
+        }
+
+        textarea {
+            background-color: transparent;
+            width: 468px;
+            margin-left: 5px;
+            height: 150px;
+            color: $helper-color;
+            
+            &::placeholder{
+                color: $helper-color;
+            }
+        }
+        button {
+            padding: 10px 30px; 
+        }
+    }
+    }
+}
