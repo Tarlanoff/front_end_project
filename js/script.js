@@ -165,7 +165,7 @@ $(document).ready(function () {
 
 
 
-    // teachers sect hover effect
+    // teachers section hover effect
     var cardImg = $("#our-teachers .card-img-top")
     var links = $("#our-teachers .card-img-top .social")
     for (let i = 0; i < cardImg.length; i++) {
@@ -180,6 +180,65 @@ $(document).ready(function () {
         })
     }
     // effect end
+
+    // students say carousel start
+    $("#student-say .owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        items: 2,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 2
+            }
+        }
+
+    })
+    // students say carousel end
+
+
+    // our blog link event
+    var myImg = $("#our-blog .card")
+    var myIcon = $("#our-blog .card-img-top .icon")
+    for (let i = 0; i < cardImg.length; i++) {
+        $(myImg[i]).mouseover(function () {
+            $(myIcon[i]).stop();
+            $(myIcon[i]).animate({ top: "110px" });
+        })
+
+        $(myImg[i]).mouseout(function () {
+            $(myIcon[i]).stop();
+            $(myIcon[i]).animate({ top: "250px" });
+        })
+    }
+    // event end
+
+    // clients carousel start
+    $('#our-client .owl-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 6
+            }
+        }
+    })
+    // carousel end
 });
 
 
