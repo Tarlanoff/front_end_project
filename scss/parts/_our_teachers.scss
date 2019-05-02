@@ -1,0 +1,109 @@
+#our-teachers {
+  margin-top: 100px;
+  padding: 100px 0;
+  width: 100%;
+  height: 700px;
+  background-image: url("https://bestwebcreator.com/eduglobal/demo/assets/images/teacher_bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: rgba(7, 41, 77, 0.9);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .title {
+    color: $helper-color;
+    padding-bottom: 25px;
+
+    p {
+      color: $helper-color;
+    }
+  }
+
+  .card {
+    width: 260px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+
+    .card-img-top {
+      height: 255px;
+      overflow: hidden;
+      position: relative;
+
+      &:hover {
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          transition: 0.7s;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .social {
+        width: 255px;
+        text-align: center;
+        position: absolute;
+        top: 255px;
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            display: inline-block;
+            margin: 0 10px;
+
+            a {
+              text-decoration: none;
+              color: $helper-color;
+
+              &:hover {
+                color: $yellow-color;
+                transition: 0.5s;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .card-body {
+      height: 100px;
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        color: $title-color;
+        font-size: 22px;
+
+        &:hover {
+          color: $yellow-color;
+          transition: 0.5s;
+        }
+      }
+
+      p {
+        color: $gray-color;
+        margin-top: 7px;
+      }
+    }
+  }
+}

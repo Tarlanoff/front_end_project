@@ -8,7 +8,8 @@ body {
 h1,
 h2,
 h3,
-h4.h5,
+h4,
+h5,
 h6 {
   font-family: $title-font;
 }
@@ -94,17 +95,20 @@ h6 {
   }
 }
 
-.btn-outline-white {
+.btn-second {
+  background-color: transparent;
   color: $helper-color;
   border: 1px solid $helper-color;
   padding: 4px 12px;
   position: relative;
+  overflow: hidden;
+  
 
   &:hover {
     color: $yellow-color;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
@@ -234,6 +238,7 @@ h6 {
   }
 }
 
+// carousel buttons animation
 @keyframes left {
   from {
     opacity: 0;
