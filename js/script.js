@@ -138,7 +138,7 @@ $(document).ready(function () {
     // main slide carousel end
 
 
-   
+
 
     // popular categories slide carousel start
     $("#popular .items").owlCarousel({
@@ -162,6 +162,24 @@ $(document).ready(function () {
         }
     })
     // popular categories slide carousel end
+
+
+
+    // teachers sect hover effect
+    var cardImg = $("#our-teachers .card-img-top")
+    var links = $("#our-teachers .card-img-top .social")
+    for (let i = 0; i < cardImg.length; i++) {
+        $(cardImg[i]).mouseover(function () {
+            $(links[i]).stop();
+            $(links[i]).animate({ top: "120px" });
+        })
+
+        $(cardImg[i]).mouseout(function () {
+            $(links[i]).stop();
+            $(links[i]).animate({ top: "255px" });
+        })
+    }
+    // effect end
 });
 
 
