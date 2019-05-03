@@ -14,9 +14,12 @@ $(document).ready(function () {
     });
     // event end
 
-    $(".btn-main").mouseover(function () {
-        var line = $("<div></div>")
+    //to top button action start
+    $("#up-btn .top a").click(function() {
+        $("body").scrollTop(0);
     });
+    //to top button action end
+   
 
 
     // modal close event
