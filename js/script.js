@@ -163,7 +163,39 @@ $(document).ready(function () {
     })
     // popular categories slide carousel end
 
+    // our gallery isotope start
+    $('.gallery-item').isotope({
+        itemSelector: '.item',
+        layoutMode: 'fitRows'
+      });
+      $('.gallery-menu ul li').click(function(){
+        $('.gallery-menu ul li').removeClass('active');
+        $(this).addClass('active');
 
+        var selector=$(this).attr('data-filter');
+        $('.gallery-item').isotope({
+            filter: selector
+        });
+        return false;
+      });
+    //   our gallery end
+
+    // our gallery icon 
+    var item = $("#our-gallery .item")
+    var info = $("#our-gallery .item .gallery-info")
+    for (let i = 0; i < item.length; i++) {
+        $(item[i]).mouseover(function () {
+            $(info[i]).stop();
+            $(info[i]).fadeToggle();
+        })
+
+        $(item[i]).mouseout(function () {
+            $(info[i]).stop(); 
+            $(info[i]).fadeToggle();         
+        })
+    }
+    
+    // end
 
     // teachers section hover effect
     var cardImg = $("#our-teachers .card-img-top")
@@ -212,12 +244,12 @@ $(document).ready(function () {
     for (let i = 0; i < cardImg.length; i++) {
         $(myImg[i]).mouseover(function () {
             $(myIcon[i]).stop();
-            $(myIcon[i]).animate({ top: "110px" });
+            $(myIcon[i]).animate({ top: "45%" });
         })
 
         $(myImg[i]).mouseout(function () {
             $(myIcon[i]).stop();
-            $(myIcon[i]).animate({ top: "250px" });
+            $(myIcon[i]).animate({ top: "150%" });
         })
     }
     // event end
@@ -239,6 +271,8 @@ $(document).ready(function () {
         }
     })
     // carousel end
+
+
 });
 
 
