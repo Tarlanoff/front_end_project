@@ -6,6 +6,7 @@
 
     .card {
       margin: 20px;
+      margin-bottom: 30px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgb(184, 179, 179);
       overflow: hidden;
@@ -110,44 +111,6 @@
 
     i {
       margin-left: 15px;
-    }
-  }
-  .page-btns {
-    ul {
-      padding: 0;
-      list-style: none;
-
-      li {
-        display: inline-block;
-        color: $gray-color;
-        border: 2px solid #dee2e6;
-        height: 40px;
-        width: 40px;
-        margin: 2px;
-        line-height: 36px;
-        border-radius: 4px;
-
-        &:hover {
-          cursor: pointer;
-          background-color: $yellow-color;
-          color: $helper-color;
-          border: 2px solid $yellow-color;
-          transition: 0.4s;
-
-          &.disabled {
-            color: $gray-color;
-            border: 2px solid rgb(197, 196, 196);
-            background-color: $helper-color;
-            cursor: auto;
-          }
-        }
-
-        &.active {
-          background-color: $yellow-color;
-          border: 2px solid $yellow-color;
-          color: $helper-color;
-        }
-      }
     }
   }
 }
