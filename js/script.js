@@ -3,8 +3,10 @@ $(document).ready(function () {
     $(window).scroll(function () {
         if ($("html").scrollTop() >= 70) {
             $("#main-menu .navbar").addClass("fixed-top");
+            $(".scrollup").show();
         } else {
             $("#main-menu .navbar").removeClass("fixed-top");
+            $(".scrollup").hide();
         }
     });
 
@@ -14,11 +16,7 @@ $(document).ready(function () {
     });
     // event end
 
-    //to top button action start
-    $("#up-btn .top a").click(function() {
-        $("body").scrollTop(0);
-    });
-    //to top button action end
+   
    
 
 

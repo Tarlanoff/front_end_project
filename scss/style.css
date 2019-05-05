@@ -401,6 +401,32 @@ h6 {
   color: #fff;
 }
 
+.scrollup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  border-radius: 100%;
+  background-color: #292b2c;
+  text-align: center;
+  z-index: 1000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.scrollup:hover {
+  background-color: #FFBC09;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.scrollup i {
+  color: #fff;
+  font-size: 24px;
+}
+
 .bg-danger {
   background-color: #f5576c;
 }
@@ -1562,6 +1588,7 @@ h6 {
   margin-left: 5px;
   height: 150px;
   color: #fff;
+  resize: none;
 }
 
 #online-courses .registration form textarea::-webkit-input-placeholder {
@@ -2196,6 +2223,116 @@ h6 {
   color: #FFBC09;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+#contact-map {
+  padding: 100px 0;
+}
+
+#contact-map #message {
+  resize: none;
+}
+
+#contact-map .content-box {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+#contact-map .content-box form {
+  padding: 50px 30px;
+}
+
+#contact-map .map {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0 10px 10px 0;
+}
+
+#contact-map .map iframe {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#info {
+  padding-bottom: 100px;
+}
+
+#info .info {
+  border-radius: 10px;
+  position: relative;
+  padding: 30px;
+}
+
+#info .info .icon {
+  position: relative;
+}
+
+#info .info .desc {
+  position: relative;
+}
+
+#info .info .desc h5 {
+  color: #fff;
+}
+
+#info .info .desc p {
+  color: #fff;
+}
+
+#info .address {
+  background-image: url("https://bestwebcreator.com/eduglobal/demo/assets/images/address_img.jpg");
+  background-size: cover;
+  background-position: center center;
+  opacity: 1;
+}
+
+#info .address::before {
+  background-color: rgba(245, 87, 108, 0.9);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 10px;
+}
+
+#info .call-us {
+  background-image: url("https://bestwebcreator.com/eduglobal/demo/assets/images/call_img.jpg");
+  background-size: cover;
+  background-position: center center;
+  opacity: 1;
+}
+
+#info .call-us::before {
+  background-color: rgba(179, 211, 105, 0.9);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 10px;
+}
+
+#info .email {
+  background-image: url("https://bestwebcreator.com/eduglobal/demo/assets/images/email_img.jpg");
+  background-size: cover;
+  background-position: center center;
+  opacity: 1;
+}
+
+#info .email::before {
+  background-color: rgba(255, 188, 9, 0.9);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 10px;
 }
 
 #stats {
